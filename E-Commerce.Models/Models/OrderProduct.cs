@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_Commerce.Models.Models
+namespace E_Commerce.Domain.Models
 {
-    public class OpderProduct
+    public class OrderProduct
     {
     }
 }

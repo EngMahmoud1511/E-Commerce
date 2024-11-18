@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_Commerce.Domain.Models
+namespace E_Commerce.Infrastucture.Repositories
 {
-    public class Order
+    public class UnitOfWork
     {
     }
 }
