@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace E_Commerce.Infrastucture.ExternalServices.CloudinaryService
 {
-    public class CloudinaryService:IClaoudinaryService
+    public class CloudinaryService:ICloudinaryService
     {
         private readonly Cloudinary _cloudinary;
 

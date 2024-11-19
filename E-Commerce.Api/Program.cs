@@ -1,4 +1,5 @@
 
+using Autofac.Extensions.DependencyInjection;
 using E_Commerce.Infrastucture.ExternalServices.Context;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,8 +17,10 @@ namespace E_Commerce.Api
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            builder.Services.AddDbContext<ApplicationDbContext>(opt=>
-            opt.UseSqlServer(builder.Configuration.GetConnectionString("connect")));
+            //builder.Services.AddDbContext<ApplicationDbContext>(opt=>
+            //opt.UseSqlServer(builder.Configuration.GetConnectionString("connect")));
+            builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+
 
             var app = builder.Build();
 
